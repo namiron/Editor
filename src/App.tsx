@@ -1,6 +1,5 @@
 
 import React from 'react'
-
 import './reset.scss'
 import WindowPage from './components/WindowPage'
 
