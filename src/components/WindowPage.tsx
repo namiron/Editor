@@ -1,5 +1,5 @@
 import React from 'react'
-import Container from './Container';
+import Body from './Body';
 import Navigation from './windowModules/Navigation';
 import Settings from './windowModules/Settings';
 import Header from './windowModules/Header';
@@ -17,7 +17,7 @@ const WindowPage: React.FC = () => {
                 </header>
                 <main className={wrapper.main}>
                     <Navigation />
-                    <Container />
+                    <Body />
                     <Settings />
                 </main>
                 <footer className={wrapper.footer}>

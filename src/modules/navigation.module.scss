@@ -1,0 +1,13 @@
+@import './../reset.scss';
+@import './../common/variables.scss';
+
+//------------------------------------vars
+$Width: 70px;
+
+
+//------------------------------------vars
+
+.navigation {
+    @include adaptive-value('padding', 10, 5, 1440);
+    width: $Width;
+}
