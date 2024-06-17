@@ -1,0 +1,19 @@
+@import './../reset.scss';
+@import './../common/variables.scss';
+
+//------------------------------------vars
+
+
+
+
+//------------------------------------vars
+
+//------------------------------------SETTINGS
+
+.settings {
+    @include adaptive-value('width', 220, 80, 1440);
+    @include adaptive-value('padding', 15, 5, 1440);
+
+}
+
+//------------------------------------SETTINGS

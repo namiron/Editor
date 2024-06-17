@@ -3,18 +3,27 @@
 
 //------------------------------------vars
 
+$headerHeight: 50px;
 
 
 //------------------------------------vars
 
 
 //----------------------------------------------------window
-.wrapper {}
+.wrapper {
+    @extend %wrapper;
 
-.header {}
+}
+
+.header {
+    min-height: $headerHeight;
+    @include adaptive-value('padding', 15, 5, 1440);
+}
 
 .main {
-    @extend %display;
+display: flex;
+    @extend %main;
+    margin: 0 auto;
 }
 
 .footer {}

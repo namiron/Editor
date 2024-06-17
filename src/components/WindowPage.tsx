@@ -1,13 +1,20 @@
 import React from 'react'
-import Container from './Container';
+import Body from './Body';
 import Navigation from './windowModules/Navigation';
-import Settings from './windowModules/Settings';
+import Settings from './windowModules/settings/Settings';
 import Header from './windowModules/Header';
 import Footer from './windowModules/Footer';
 import wrapper from '../modules/wrapper.module.scss'
+import { UseParametersStateHook } from '../hooks/hooks';
 
 
 const WindowPage: React.FC = () => {
+    //------------------------------------------
+    const [parameters, setParameters] = UseParametersStateHook()
+    console.log('parameters', parameters);
+
+    //------------------------------------------
+
 
     return (
         <div>
@@ -17,8 +24,8 @@ const WindowPage: React.FC = () => {
                 </header>
                 <main className={wrapper.main}>
                     <Navigation />
-                    <Container />
-                    <Settings />
+                    <Body parameters={parameters} setParameters={setParameters} />
+                    <Settings setParameters={setParameters} />
                 </main>
                 <footer className={wrapper.footer}>
                     <Footer />
